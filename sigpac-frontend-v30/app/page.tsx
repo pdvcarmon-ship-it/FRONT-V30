@@ -1154,7 +1154,7 @@ export default function Home() {
     return <LoginScreen onLogin={async () => {
       const { data } = await supabase.auth.getSession()
       setSession(data.session)
-    }} />
+    }} >
   }
   return (
     <div style={{ display: 'flex', flexDirection: 'column', height: '100vh', overflow: 'hidden' }}>
