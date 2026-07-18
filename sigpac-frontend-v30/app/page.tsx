@@ -1156,7 +1156,6 @@ export default function Home() {
       setSession(data.session)
     }} />
   }
-
   return (
     <div style={{ display: 'flex', flexDirection: 'column', height: '100vh', overflow: 'hidden' }}>
 
