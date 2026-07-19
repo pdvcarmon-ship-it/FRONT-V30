@@ -2,8 +2,8 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'SIGPAC · Sentinel Viewer',
-  description: 'Gestión agrícola con imágenes satelitales Sentinel-2',
+  title: 'KAMPO',
+  description: 'Gestión de agrícola',
 }
 
 export const viewport: Viewport = {
