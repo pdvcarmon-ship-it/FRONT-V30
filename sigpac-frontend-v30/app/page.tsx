@@ -1166,10 +1166,26 @@ export default function Home() {
       <div style={{ display: 'flex', background: 'var(--surface)', borderBottom: '1px solid var(--border)', flexShrink: 0 }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '0 16px', borderRight: '1px solid var(--border)' }}>
           <span style={{ fontSize: 16 }}>🌱</span>
-          <span style={{ fontFamily: 'var(--mono)', fontSize: 11, color:  fontWeight: 700, letterSpacing: '0.05em' }}>
+          <span
+  style={{
+    fontFamily: 'var(--mono)',
+    fontSize: 11,
+    fontWeight: 700,
+    letterSpacing: '0.05em',
+  }}
+>
   <span style={{ color: 'var(--green)' }}>K</span>
   <span style={{ color: '#fff' }}>AMPO</span>
 </span>
+
+
+
+  <span style={{ color: 'var(--green)' }}>K</span>
+  <span style={{ color: '#fff' }}>AMPO</span>
+</span>
+
+
+        
         </div>
         {(['mapa', 'mis_parcelas', 'tratamientos', 'personal'] as Pestaña[]).map(tab => (
           <button
