@@ -83,9 +83,9 @@ interface Tratamiento {
   producto: string
   materiaActiva: string
   dosis: string
-  unidadDosis: 'L/ha' | 'Kg/ha' | 'g/ha' | 'mL/hL' | 'L/hL' | 'g/hL' | 'Kg/hL' | '%(v/v)' | '%(p/p)' | 'g/m^2' | 'g/kg semilla' | 'mL/kg semilla' | 'mL/m^2'| 'L/m^2' | 'mg/m^2';
+  unidadDosis: 'L/ha' | 'Kg/ha' | 'g/ha' | 'mL/hL' | 'L/hL' | 'g/hL' | 'Kg/hL' | '%(v/v)' | '%(p/p)' | 'g/m²' | 'g/kg semilla' | 'mL/kg semilla' | 'mL/m²'| 'L/m²' | 'mg/m²';
   dosisMaxima: string
-  unidadDosisMaxima?: 'L/ha' | 'Kg/ha' | 'g/ha' | 'mL/hL' | 'L/hL' | 'g/hL' | 'Kg/hL' | '%(v/v)' | '%(p/p)' | 'g/m^2' | 'g/kg semilla' | 'mL/kg semilla' | 'mL/m^2'| 'L/m^2' | 'mg/m^2';
+  unidadDosisMaxima?: 'L/ha' | 'Kg/ha' | 'g/ha' | 'mL/hL' | 'L/hL' | 'g/hL' | 'Kg/hL' | '%(v/v)' | '%(p/p)' | 'g/m²' | 'g/kg semilla' | 'mL/kg semilla' | 'mL/m²'| 'L/m²' | 'mg/m²';
   aplicMaxima: string
   fecha: string
   aplicador: string
@@ -203,7 +203,7 @@ export default function Home() {
   const [tDosis, setTDosis] = useState('')
   const [mrlResultado, setMrlResultado] = useState<any>(null)
   const [consultandoMrl, setConsultandoMrl] = useState(false)
-  const [tUnidad, setTUnidad] = useState<'L/ha' | 'Kg/ha' | 'g/ha' | 'mL/hL' | 'L/hL' | 'g/hL' | 'Kg/hL' | '%(v/v)' | '%(p/p)' | 'g/m^2' | 'g/kg semilla' | 'mL/kg semilla' | 'mL/m^2' | 'L/m^2' | 'mg/m^2'>('L/ha')
+  const [tUnidad, setTUnidad] = useState<'L/ha' | 'Kg/ha' | 'g/ha' | 'mL/hL' | 'L/hL' | 'g/hL' | 'Kg/hL' | '%(v/v)' | '%(p/p)' | 'g/m²' | 'g/kg semilla' | 'mL/kg semilla' | 'mL/m²' | 'L/m²' | 'mg/m²'>('L/ha')
   const [tFecha, setTFecha] = useState('')
   const [tAplicador, setTAplicador] = useState('')
   const [tObs, setTObs] = useState('')
@@ -2770,7 +2770,7 @@ export default function Home() {
                     <label style={{ display: 'block', fontSize: 10, fontFamily: 'var(--mono)', color: 'var(--muted)', marginBottom: 5 }}>Dosis máx. permitida</label>
                     <div style={{ display: 'flex', gap: 6 }}>
                       <input type="number" min="0" step="0.01" value={tDosisMaxima} onChange={e => setTDosisMaxima(e.target.value)} placeholder="Ej: 4.0" style={{ flex: 1, minWidth: 0, background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 6, padding: '8px 10px', color: 'var(--text)', fontSize: 12, fontFamily: 'var(--sans)', outline: 'none' }}/>
-                      <select value={tUnidadDosisMaxima} onChange={e => setTUnidadDosisMaxima(e.target.value as 'L/ha' | 'Kg/ha' | 'g/ha' | 'mL/hL' | 'L/hL' | 'g/hL' | 'Kg/hL' | '%(v/v)' | '%(p/p)' | 'g/m^2' | 'g/kg semilla' | 'mL/kg semilla' | 'mL/m^2' | 'L/m^2' | 'mg/m^2')} style={{ background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 6, padding: '8px 6px', color: 'var(--text)', fontSize: 12, fontFamily: 'var(--sans)', outline: 'none' }}>
+                      <select value={tUnidadDosisMaxima} onChange={e => setTUnidadDosisMaxima(e.target.value as 'L/ha' | 'Kg/ha' | 'g/ha' | 'mL/hL' | 'L/hL' | 'g/hL' | 'Kg/hL' | '%(v/v)' | '%(p/p)' | 'g/m²' | 'g/kg semilla' | 'mL/kg semilla' | 'mL/m^2' | 'L/m^2' | 'mg/m^2')} style={{ background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 6, padding: '8px 6px', color: 'var(--text)', fontSize: 12, fontFamily: 'var(--sans)', outline: 'none' }}>
                         <option value="L/ha">L/ha</option>
                         <option value="Kg/ha">Kg/ha</option>
                         <option value="g/ha">g/ha</option>
@@ -2780,17 +2780,17 @@ export default function Home() {
                         <option value="Kg/hL">Kg/hL</option>
                         <option value="%(v/v)">%(v/v)</option>
                         <option value="%(p/p)">%(p/p)</option>
-                        <option value="g/m^2">g/m^2</option>
+                        <option value="g/m²">g/m²</option>
                         <option value="g/kg semilla">g/kg semilla</option>
                         <option value="mL/kg semilla">mL/kg semilla</option>
-                        <option value="mL/m^2">mL/m^2</option>
-                        <option value="L/m^2">L/m^2</option>
-                        <option value="mg/m^2">mg/m^2</option>
+                        <option value="mL/m²">mL/m²</option>
+                        <option value="L/m²">L/m²</option>
+                        <option value="mg/m²">mg/m²</option>
                       </select>
                     </div>
                   </div>
                   <div>
-                    <label style={{ display: 'block', fontSize: 10, fontFamily: 'var(--mono)', color: 'var(--muted)', marginBottom: 5 }}>Nº máx. aplicaciones/campaña</label>
+                    <label style={{ display: 'block', fontSize: 10, fontFamily: 'var(--mono)', color: 'var(--muted)', marginBottom: 5 }}>Nº Aplic.</label>
                     <input type="number" min="0" step="1" value={tAplicMaxima} onChange={e => setTAplicMaxima(e.target.value)} placeholder="Ej: 4" style={{ width: '100%', background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 6, padding: '8px 10px', color: 'var(--text)', fontSize: 12, fontFamily: 'var(--sans)', outline: 'none' }}/>
                   </div>
                 </div>
