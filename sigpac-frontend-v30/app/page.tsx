@@ -2790,7 +2790,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div>
-                    <label style={{ display: 'block', fontSize: 10, fontFamily: 'var(--mono)', color: 'var(--muted)', marginBottom: 5 }}>Nº máx. aplicaciones/campaña</label>
+                    <label style={{ display: 'block', fontSize: 10, fontFamily: 'var(--mono)', color: 'var(--muted)', marginBottom: 5 }}>Nº Aplic.</label>
                     <input type="number" min="0" step="1" value={tAplicMaxima} onChange={e => setTAplicMaxima(e.target.value)} placeholder="Ej: 4" style={{ width: '100%', background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 6, padding: '8px 10px', color: 'var(--text)', fontSize: 12, fontFamily: 'var(--sans)', outline: 'none' }}/>
                   </div>
                 </div>
