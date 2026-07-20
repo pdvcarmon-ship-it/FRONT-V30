@@ -83,7 +83,7 @@ interface Tratamiento {
   producto: string
   materiaActiva: string
   dosis: string
-  unidadDosis: 'L/ha' | 'Kg/ha' | 'g/ha' | 'mL/hL' | 'L/hL' | 'g/hL' | 'Kg/hL' | '%(v/v)' | '%(p/p)' | 'g/m^2' | 'g/kg semilla' | 'mL/kg semilla' | 'mL/m^2'| 'L/m^2' | 'mg/m^2'
+  unidadDosis: 'L/ha' | 'Kg/ha' | 'g/ha' | 'mL/hL' | 'L/hL' | 'g/hL' | 'Kg/hL' | '%(v/v)' | '%(p/p)' | 'g/m^2' | 'g/kg semilla' | 'mL/kg semilla' | 'mL/m^2'| 'L/m^2' | 'mg/m^2';
   dosisMaxima: string
   aplicMaxima: string
   fecha: string
